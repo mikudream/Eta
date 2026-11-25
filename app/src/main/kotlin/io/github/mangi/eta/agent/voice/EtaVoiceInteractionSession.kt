@@ -85,12 +85,12 @@ internal class EtaVoiceInteractionSession(context: Context) : VoiceInteractionSe
     }
 
     override fun onBackPressed() {
-        EtaAssistantOverlayService.dismiss(context)
+        EtaAssistantOverlayService.dismissForUser(context)
         hide()
     }
 
     override fun onCloseSystemDialogs() {
-        EtaAssistantOverlayService.dismiss(context)
+        EtaAssistantOverlayService.dismissForUser(context)
         hide()
     }
 
